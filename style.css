@@ -1,0 +1,248 @@
+body{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(58, 58, 58);
+}
+
+.content{
+    width: 18cm;
+    min-height: 1000cm;
+    padding: 20px;
+    background-color: #1f1f1f;
+    overflow-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+    
+}
+@font-face {
+    font-family: wop;
+    src: url(WhiteOnBlack.ttf);
+}
+h1{
+    font-family:wop ;
+    color: antiquewhite;
+    font-size: 45px;
+    padding-top: 20px;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.me{
+    padding-bottom: 200px;
+    width:400px
+}
+.project{
+    color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: pow;
+    font-size: xx-large;
+    padding-top: 4%;
+}
+.intro{
+    font-family: pow;
+    color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    font-size: x-large;
+    padding-top: 80px;
+}
+@font-face{
+    font-family: pow;
+    src: url(GritPress_TB.otf);
+}
+.video{
+    padding-top: 10px;
+    align-self: center;
+    padding-bottom: 20px;
+    width: 560;
+    height: 315;
+    border:none;
+}
+.pics{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+.pics img {
+    max-width: calc((18cm - 40px) / 2);
+    height: auto;
+    flex-grow: 1;
+    object-fit: contain;
+}
+.pics img.large {
+    width: 100% !important;
+    max-width: none !important;
+    height: auto !important;
+}
+.pics img.large1 {
+    width: 100% !important;
+    max-width: 10cm !important;
+    height: auto !important;
+    margin: 0 auto;
+    display: block;
+}
+.uitleg{
+    font-family: pow;
+    color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    font-size: x-large;
+    padding-top: 0px;
+}
+.woorden{
+    font-family: pow;
+    color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    font-size: xx-large;
+    padding-top: 0px; 
+}
+.pics1{
+    max-width: calc((18cm - 40px) / 2);
+    height: auto;
+    flex-grow: 1;
+    object-fit: contain;
+}
+/* Book Container */
+.book {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 16cm;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Arrows */
+.arrow {
+    background:none;
+    color: gray;
+    border: none;
+    padding: 10px 20px;
+    font-size: 2.5em;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    opacity: 0.7;
+}
+
+.arrow:hover {
+    opacity: 1;
+}
+
+.arrow.left {
+    left: 10px;
+}
+
+.arrow.right {
+    right: 10px;
+}
+.book-pages {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 80%;
+}
+.book-pages2 {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+.page {
+    display: none;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.page2 {
+    display: none;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.page2.active {
+    display: block;
+}
+.page.active {
+    display: block;
+}
+.pics2{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+.pics2 img {
+    max-width: calc((18cm - 40px) / 3);
+    height: auto;
+    flex-grow: 1;
+    object-fit: contain;
+}
+.pics2 img.large3 {
+    width: 80px !important;
+    max-width: none !important;
+    height: auto !important;
+}
+.pics3{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+.pics3 img {
+    max-width: calc((18cm - 40px) / 2);
+    height: auto;
+    flex-grow: 1;
+    object-fit: contain;
+}
+.pics3 img.large4 {
+    width: 100% !important;
+    max-width: none !important;
+    height: auto !important;
+}
+.pics4{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+.pics4 img {
+    max-width: calc((18cm - 40px) / 2);
+    height: auto;
+    flex-grow: 1;
+    object-fit: contain;
+}
+.pics4 img.large5 {
+    width: 341px ;
+    max-width: none ;
+    height: auto ;
+}
