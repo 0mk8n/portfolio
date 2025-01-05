@@ -3,7 +3,6 @@ body {
     height: 100%;
     display: flex;
     justify-content: center;
-    background-color: rgb(58, 58, 58);
     margin: 0;
     padding: 0;
 }
