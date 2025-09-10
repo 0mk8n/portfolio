@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<div class="css-bug"></div>
+<body>
+    <!-- Navigation -->
+  <div class="content" >
+    <nav>
+        <button class="nav-btn active" onclick="showSection('home')">thuis</button>
+        <button class="nav-btn" onclick="showSection('about')">over mij</button>
+        <button class="nav-btn" onclick="showSection('projects')">projecten</button>
+        <button class="nav-btn" onclick="showSection('contact')">contact</button>
+    </nav>
+
+    <!-- Main content -->
+    <main>
+        <!-- Home Section -->
+<section id="home" class="section active">
+    <div class="home-container">
+        <div class="project-item large" onclick="showProject(1)">
+            <div class="project-placeholder"><img src="export202508041801038390.png"></div>
+        </div>
+        <div class="small-projects-row">
+            <div class="project-item medium" onclick="showProject(2)">
+                <div class="project-placeholder"><img src="fotos/wol/P1190041.JPG"></div>
+            </div>
+            <div class="project-item small" onclick="showProject(4)">
+                <div class="project-placeholder"><img src="fotos/panty/IMG-20241004-WA0012.jpg"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="about-container">
+                <div class="about-image"> <img src="IMG-20241213-WA0043.jpg"></div>
+                <div class="about-text">
+                    Ik ben Rosa van den Goor. Ik ben 20 jaar en studeer Fashion Design op de HKU, alhoewel mijn portfolio uit veel meer bestaat dan alleen mode.
+                    Ik hoe van textiel ambachten zoals vilten, spinnen, breien, zeefdrukken en borduren. Esthetiek speelt een belangerijke rol in mijn werk.
+                    Ik geloof dat je door middel van esthetiek een verhaal kan vertellen, een gevoel over kan brengen. Ik hou van ambachten omdat ik ervan hou
+                    dat je kan zien dat er een menselijke hand aan te pas is geweest. Dat er tijd en aandacht aan is besteed vind ik altijd enorm indrukwekkend om te zien.
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="projects-container">
+                <div class="project-entry" onclick="showProject(1)">
+                    <div class="project-image"> <img src="export202508041801038390.png"></div>
+                    <div class="project-description">De Kop en de Staart - een korte film</div>
+                </div>
+                <div class="project-entry" onclick="showProject(2)">
+                    <div class="project-image"> <img src="fotos/wol/P1180773.JPG"></div>
+                    <div class="project-description">Biologisch Afbreekbaar - een project over het leven verteld via schapenwol</div>
+                </div>
+                <div class="project-entry" onclick="showProject(3)">
+                    <div class="project-image"><img src="fotos/boekje/PSX_20241111_130546.png"></div>
+                    <div class="project-description">Mijn schetsboekje van 2024 - ik in beeld</div>
+                </div>
+                <div class="project-entry" onclick="showProject(4)">
+                    <div class="project-image"><img src="fotos/panty/IMG-20241004-WA0012.jpg"></div>
+                    <div class="project-description">kriebelpanty (ook te koop!)</div>
+                </div>
+                <div class="project-entry" onclick="showProject(5)">
+                    <div class="project-image"><img src="fotos/poppen/IMG20230126134930.jpg"></div>
+                    <div class="project-description">Poppen van een poppen seminar + een filmpje</div>
+                </div>
+                <div class="project-entry" onclick="showProject(6)">
+                    <div class="project-image"><img src="fotos/fotoshoot/export202303131201538597.jpeg"></div>
+                    <div class="project-description">Fotoshoot - een esthetisch onderzoek</div>
+                </div>
+                <div class="project-entry" onclick="showProject(7)">
+                    <div class="project-image"><img src="fotos/lichaam/export202312212208308114.png"></div>
+                    <div class="project-description">Aderen, botten en huid - het ontzichtbare zichtbaar gemaakt</div>
+                </div>
+                <div class="project-entry" onclick="showProject(8)">
+                    <div class="project-image"><img srcset="fotos/ratenduif/IMG-20241213-WA0053.jpg"></div>
+                    <div class="project-description">Rat en Duif - een fotoshoot</div>
+                </div>
+                <div class="project-entry" onclick="showProject(9)">
+                    <div class="project-image"><img src="fotos/clo3d/ROSA RENDER2_2.png"></div>
+                    <div class="project-description">Clo3D - experimenteren</div>
+                </div>
+                <div class="project-entry" onclick="showProject(10)">
+                    <div class="project-image"><img src="fotos/aardbei/aardbei4.jpg"></div>
+                    <div class="project-description">Beschimmelde aardbei - een fotoshop experiment</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="contact-container">
+                <div class="contact-text">
+                    <h2>Contact</h2>
+                    <p>Contacteer mij voor vragen, antwoorden of gewoon om even contact te maken. Ik hoor graag van je!</p>
+                    <br>
+                    <p>Email: kriebelpanty@protonmail.com</p>
+                    <p>Instagram: @rosas.kunst</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Individual Project Section -->
+<section id="project-1" class="section project-detail-section">
+    <div class="project-detail">
+        <button class="back-btn" onclick="goBack()">← Terug</button>
+        <div class="project-title">De Kop en de Staart - een korte film</div>
+        <div class="project-text">
+            Binnenkort meer informatie!
+        </div>
+    </div>
+</section>
+
+<section id="project-2" class="section project-detail-section">
+    <div class="project-detail">
+        <button class="back-btn" onclick="goBack()">← Terug</button>
+        <div class="project-title">Biologisch Afbreekbaar - een project over het leven verteld via schapenwol</div>
+        <div class="project-text">
+            Geinspireerd door de manier waarop schimmel groeit, altijd zoekend naar wegen die af te leggen zijn, heb ik een stop motion filmpje gemaakt. Met vezels van Nederlandse schapenwol die met elkaar verstrengeld zijn, door het spinnen en vilten ervan. Net als schimmels is ons leven constant in beweging. We waren, zijn en zullen altijd deel zijn van het onbegrensde bestaan. <br> Met Bo Lemmens als model.
+        </div>
+                <video controls width="100%" style="max-width: 800px; height: auto;">
+        <source src="fotos/wol/BASM.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+        <div class="project-detail-image"><img src="fotos/wol/P1180773.JPG"></div>
+        <div class="project-detail-image"><img src="fotos/wol/P1180906.JPG"></div>
+        <div class="project-detail-image"><img src="fotos/wol/P1180866.JPG"></div>
+        <div class="project-detail-image"><img src="fotos/wol/P1190002.JPG"></div>
+        <div class="project-images-row">
+        <div class="project-detail-image"><img src="fotos/wol/P1190031.JPG"></div>
+        <div class="project-detail-image"><img src="fotos/wol/P1190041.JPG"></div>
+        </div>
+        <div class="project-detail-image"><img src="fotos/wol/P1190051.JPG"></div>
+        <div class="project-detail-image"><img src="fotos/wol/P1190049.JPG"></div>
+        <div class="project-detail-image"><img src="fotos/wol/P1190063.JPG"></div>
+        <div class="project-text">
+            Ik begon met het verwerken van de wol: Wassen - verven - kaarden - spinnen of vilten.
+            Toen ben ik op een paspop gaan mouleren en heb me door het materiaal laten leiden.
+        </div>
+        <div class="project-detail-image"><img src="fotos/wol/IMG20231011171017.jpg"></div>
+        <div class="project-detail-image"><img src="fotos/wol/IMG20240308155315.jpg"></div>
+        <div class="project-detail-image"><img src="fotos/wol/IMG20240308162509.jpg"></div>
+        <div class="project-detail-image"><img src="fotos/wol/IMG20240311115224.jpg"></div>
+        <div class="project-detail-image"><img src="fotos/wol/IMG20231018165436.jpg"></div>
+        <div class="project-detail-image"><img src="fotos/wol/IMG20240312163023.jpg"></div>
+        <div class="project-detail-image"><img src="fotos/wol/IMG20240514141553.jpg"></div>
+        <div class="project-detail-image"><img src="fotos/wol/IMG20240517144222.jpg"></div>
+        <div class="project-detail-image"><img src="fotos/wol/IMG20240321172811.jpg"></div>
+        <div class="project-detail-image"><img src="fotos/wol/IMG20240617143334.jpg"></div>
+        <div class="project-detail-image"><img src="fotos/wol/rosaposter1.png"></div>
+        <div class="project-detail-image"><img src="fotos/wol/rosaposter.png"></div>
+        <div class="project-text">
+    </div>
+</section>
+
+<section id="project-3" class="section project-detail-section">
+    <div class="project-detail">
+        <button class="back-btn" onclick="goBack()">← Terug</button>
+        <div class="project-title">Mijn schetsboekje van 2024 - ik in beeld</div>
+
+        <div class="book">
+    <button class="arrow left" onclick="prevPageTwo()">&#8249;</button>
+    <div class="book-pages2">
+        <img src="fotos/boekje/PSX_20241111_130754.png" alt="Page 1" class="page2 active">
+        <img src="fotos/boekje/PSX_20241111_130457.png" alt="Page 2" class="page2">
+        <img src="fotos/boekje/PSX_20241111_130027.png" alt="Page 3" class="page2">
+        <img src="fotos/boekje/PSX_20241111_130846.png" alt="Page 4" class="page2">
+        <img src="fotos/boekje/PSX_20241111_130546.png" alt="Page 5" class="page2">
+        <img src="fotos/boekje/PSX_20241111_130814.png" alt="Page 6" class="page2">
+        <img src="fotos/boekje/PSX_20241111_130439.png" alt="Page 7" class="page2">
+        <img src="fotos/boekje/PSX_20241111_130732.png" alt="Page 8" class="page2">
+        <img src="fotos/boekje/PSX_20241111_130348.png" alt="Page 9" class="page2">
+        <img src="fotos/boekje/PSX_20241111_130517.png" alt="Page 10" class="page2">
+        <img src="fotos/boekje/PSX_20241111_133047.png" alt="Page 11" class="page2">
+        <img src="fotos/boekje/PSX_20241111_130420.png" alt="Page 12" class="page2">
+    </div>
+    <button class="arrow right" onclick="nextPageTwo()">&#8250;</button>
+</div>
+    </div>
+</section>
+
+<section id="project-4" class="section project-detail-section">
+    <div class="project-detail">
+        <button class="back-btn" onclick="goBack()">← Terug</button>
+        <div class="project-title">kriebelpanty</div>
+        <div class="project-text">
+            Een insecten panty om lekker mee in het gras te liggen, tussen je maatjes. Mail of DM mij om een bestelling te doen! Ze zijn €23 per stuk en in de maten S M en L verkrijgbaar. Gemaakt door mij!
+        </div>
+        <div class="project-detail-image"><img src="fotos/panty/IMG-20241004-WA0012.jpg"></div>
+        <div class="project-detail-image"><img src="fotos/panty/IMG-20241004-WA0014.jpg"></div>
+        <div class="project-detail-image"><img src="fotos/panty/IMG-20241004-WA0018.jpg"></div>
+        <div class="project-detail-image"><img src="fotos/panty/IMG-20241004-WA0008.jpg"></div>
+    </div>
+</section>
+
+
+
+<section id="project-5" class="section project-detail-section">
+    <div class="project-detail">
+        <button class="back-btn" onclick="goBack()">← Terug</button>
+        <div class="project-title">Poppen van een poppen seminar + een filmpje</div>
+        <div class="project-text">
+            Wezens maken uit schuim, gekleurd met pastelkrijtjes; schuim bedekt met latex voor een huid-achtig uiterlijk; uit bakpapier met houtlijm bij elkaar gehouden en van stukken katoen, over een mal van kranten, met witte lijm bij elkaar gehouden.
+        </div>
+        <div class="project-detail-image"><img src="fotos/poppen/IMG20230126134930.jpg"></div>
+        <div class="project-detail-image"><img src="fotos/poppen/IMG20230126134947.jpg"></div>
+        <div class="project-detail-image"><img src="fotos/poppen/IMG20230126152531.jpg"></div>
+        <div class="project-detail-image"><img src="fotos/poppen/IMG20230131154814.jpg"></div>
+        <div class="project-detail-image"><img src="fotos/poppen/IMG20230131154844.jpg"></div>
+        <div class="project-detail-image"><img src="fotos/poppen/IMG20230131154900.jpg"></div>
+        <div class="project-detail-image"><img src="fotos/poppen/IMG20230201154909.jpg"></div>
+        <div class="project-text">
+            Een filmpje als afsluiter van de seminar, met een groepje hebben we een wereld gemaakt waarin onze poppen tot leven komen. Waar goed en kwaad aanwezig zijn.
+            <br>Fiskeri
+        </div>
+        <video controls width="100%" style="max-width: 800px; height: auto;">
+        <source src="fotos/poppen/puppetpractice.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+    </div>
+</section>
+
+<section id="project-6" class="section project-detail-section">
+    <div class="project-detail">
+        <button class="back-btn" onclick="goBack()">← Terug</button>
+        <div class="project-title">Fotoshoot - een esthetisch onderzoek</div>
+        <div class="project-text">
+            Experimenteren met kleur en beeld. Ik wilde foto's maken die een samenhang krijgen door middel van kleur en esthetiek. Een gevoel van rust waar het onheilspellende toch op de loer ligt. Geen vals gevoel van rust, maar juist rust omdat ook het tegenovergestelde bestaat.
+        </div>
+        <div class="project-detail-image"><img src="fotos/fotoshoot/export202303131201538597.jpeg"></div>
+        <div class="project-detail-image"><img src="fotos/fotoshoot/export202303131201548730.jpeg"></div>
+        <div class="project-detail-image"><img src="fotos/fotoshoot/export202303131201553338.jpeg"></div>
+        <div class="project-detail-image"><img src="fotos/fotoshoot/export202303131201559637.jpeg"></div>
+        <div class="project-detail-image"><img src="fotos/fotoshoot/export202303131201563286.jpeg"></div>
+        <div class="project-detail-image"><img src="fotos/fotoshoot/export202303131838087867.png"></div>
+        <div class="project-detail-image"><img src="fotos/fotoshoot/fixin.png"></div>
+    </div>
+</section>
+
+<section id="project-7" class="section project-detail-section">
+    <div class="project-detail">
+        <button class="back-btn" onclick="goBack()">← Terug</button>
+        <div class="project-title">Aderen, botten en huid - het ontzichtbare zichtbaar gemaakt</div>
+        <div class="project-detail-image"><img src="fotos/lichaam/export202312212208308114.png"></div>
+        <div class="project-text">
+            Systemen in je lichaam die constant met elkaar in contact staan.
+        </div>
+        <div class="project-detail-image"><img src="fotos/lichaam/export202312220927261594.png"></div>
+        <div class="project-detail-image"><img src="fotos/lichaam/export202312220927313438.png"></div>
+        <div class="project-detail-image"><img src="fotos/lichaam/export202312220927361001.png"></div>
+        <div class="project-text">
+            Ik vergeet wel eens dat ik een lichaam heb die bestaat uit allerlei bacterien en cellen die hun best doen om in leven te blijven, dus heb ik voor mezelf en 
+            anderen een herinnering gemaakt aan het lichaam. Vergeet er niet voor te zorgen en vergeet niet af en toe die bacterien te bedanken. <br> Met Michiel van den Goor als model.
+        </div>
+        <div class="project-detail-image"><img src="fotos/lichaam/export202312211603122803.png"></div>
+        <div class="project-detail-image"><img src="fotos/lichaam/export202312212208191546.png"></div>
+        <div class="project-detail-image"><img src="fotos/lichaam/export202312212208248676.png"></div>
+        <div class="project-detail-image"><img src="fotos/lichaam/export202312212332467399.png"></div>
+        <iframe class=video src="fotos/lichaam/20240110_151137.gif"></iframe>
+    </div>
+</section>
+
+<section id="project-8" class="section project-detail-section">
+    <div class="project-detail">
+        <button class="back-btn" onclick="goBack()">← Terug</button>
+        <div class="project-title">Rat en Duif - een fotoshoot</div>
+        <div class="project-text">
+            Het uitschot van het dierenrijk, dat is vaak hoe de rat en de duif worden gezien.<br> 'Duiven zijn de ratten van de lucht' <br> Maar ook ratten en duiven hebben hun eigen leventje, zoals Rat en Duif hier laten zien. Ook zij doen een sjaal om in de winter, net als jij.
+            <br> Lotte Roquas heeft Duif tot leven gebracht en ik heb Rat tot leven gebracht.
+        </div>
+        <div class="project-detail-image"><img src="fotos/ratenduif/DSC_0539.JPG"></div>
+        <div class="project-detail-image"><img src="fotos/ratenduif/DSC_0545.JPG"></div>
+        <div class="project-detail-image"><img src="fotos/ratenduif/DSC_0546.JPG"></div>
+        <div class="project-detail-image"><img src="fotos/ratenduif/IMG-20241213-WA0046.jpg"></div>
+        <div class="project-detail-image"><img src="fotos/ratenduif/IMG-20241213-WA0050.jpg"></div>
+        <div class="project-detail-image"><img src="fotos/ratenduif/IMG-20241213-WA0053.jpg"></div>
+        <div class="project-detail-image"><img src="fotos/ratenduif/IMG-20241213-WA0057.jpg"></div>
+        <div class="project-detail-image"><img src="fotos/ratenduif/IMG-20241213-WA0072.jpg"></div>
+        <div class="project-detail-image"><img src="fotos/ratenduif/IMG-20241213-WA0078.jpg"></div>
+        <div class="project-detail-image"><img src="fotos/ratenduif/IMG-20241213-WA0081.jpg"></div>
+        <div class="project-detail-image"><img src="fotos/ratenduif/IMG-20241213-WA0082.jpg"></div>
+        <div class="project-text">
+            Meer foto's zullen volgen!
+        </div>
+    </div>
+</section>
+
+<section id="project-9" class="section project-detail-section">
+    <div class="project-detail">
+        <button class="back-btn" onclick="goBack()">← Terug</button>
+        <div class="project-title">Clo3D - experimenteren</div>
+        <div class="project-text">
+            Clo3D is een programma waarmee je kleding kan maken in een digitale omgeving.
+        </div>
+        <div class="project-detail-image"><img src="fotos/clo3d/render Rosa_1.png"></div>
+        <div class="project-detail-image"><img src="fotos/clo3d/render Rosa_2.png"></div>
+        <div class="project-detail-image"><img src="fotos/clo3d/ROSA RENDER_1.png"></div>
+        <div class="project-detail-image"><img src="fotos/clo3d/ROSA RENDER2_1.png"></div>
+        <div class="project-detail-image"><img src="fotos/clo3d/ROSA RENDER2_2.png"></div>
+    </div>
+</section>
+
+<section id="project-10" class="section project-detail-section">
+    <div class="project-detail">
+        <button class="back-btn" onclick="goBack()">← Terug</button>
+        <div class="project-title">Beschimmelde aardbei - een fotoshop experiment</div>
+        <div class="project-text">
+            Een foto van een beschimmelde aardbei gemanipuleerd tot kleding. Dit was een experiment om uit te proberen op welke manieren je allemaal een foto kunt bewerken in fotoshop. Dit heeft geleid tot een serie aan Strawberry Moldcakes.
+        </div>
+        <div class="book">
+        <button class="arrow left" onclick="prevPage()">&#8249;</button>
+        <div class="book-pages">
+            <img src="fotos/aardbei/aardbei1.jpg" alt="Page 1" class="page active">
+            <img src="fotos/aardbei/aardbei2.jpg" alt="Page 2" class="page">
+            <img src="fotos/aardbei/aardbei3.jpg" alt="Page 3" class="page">
+            <img src="fotos/aardbei/aardbei4.jpg" alt="Page 4" class="page">
+            <img src="fotos/aardbei/aardbei5.jpg" alt="Page 5" class="page">
+            <img src="fotos/aardbei/aardbei6.jpg" alt="Page 6" class="page">
+            <img src="fotos/aardbei/aardbei7.jpg" alt="Page 7" class="page">
+            <img src="fotos/aardbei/aardbei8.jpg" alt="Page 8" class="page">
+            <img src="fotos/aardbei/aardbei9.jpg" alt="Page 9" class="page">
+        </div>
+        <button class="arrow right" onclick="nextPage()">&#8250;</button>
+    </div>
+    </div>
+</section>
+</section>
+
+    </main>
+
+    <script src="script.js"></script>
+  </div>
+</body>
+</html>
