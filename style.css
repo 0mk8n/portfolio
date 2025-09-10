@@ -663,7 +663,7 @@ html {
     height: 40px;
     z-index: 9999;
     pointer-events: none;
-    animation: randomWalk 30s linear infinite;
+    animation: randomWalk 180s linear infinite;
 }
 
 .css-bug::before {
@@ -678,176 +678,107 @@ html {
     50% { transform: scale(1.1); }
 }
 
-/* Random walk animation with proper head direction and screen wrapping */
+/* Extended random walk animation with instant rotation and proper border boundaries */
 @keyframes randomWalk {
-    0% { 
-        left: -5%; 
-        top: 15%; 
-        transform: rotate(45deg);
-    }
-    3% { 
-        left: 8%; 
-        top: 25%; 
-        transform: rotate(135deg);
-    }
-    6% { 
-        left: 12%; 
-        top: 45%; 
-        transform: rotate(90deg);
-    }
-    9% { 
-        left: 25%; 
-        top: 35%; 
-        transform: rotate(45deg);
-    }
-    12% { 
-        left: 35%; 
-        top: 20%; 
-        transform: rotate(-30deg);
-    }
-    15% { 
-        left: 50%; 
-        top: 10%; 
-        transform: rotate(0deg);
-    }
-    18% { 
-        left: 65%; 
-        top: 25%; 
-        transform: rotate(135deg);
-    }
-    21% { 
-        left: 75%; 
-        top: 45%; 
-        transform: rotate(180deg);
-    }
-    24% { 
-        left: 85%; 
-        top: 60%; 
-        transform: rotate(225deg);
-    }
-    27% { 
-        left: 95%; 
-        top: 75%; 
-        transform: rotate(270deg);
-    }
-    30% { 
-        left: 105%; /* Off screen right */
-        top: 80%; 
-        transform: rotate(315deg);
-    }
-    33% { 
-        left: -5%; /* Wrapped to left side */
-        top: 85%; 
-        transform: rotate(45deg);
-    }
-    36% { 
-        left: 15%; 
-        top: 90%; 
-        transform: rotate(90deg);
-    }
-    39% { 
-        left: 30%; 
-        top: 75%; 
-        transform: rotate(135deg);
-    }
-    42% { 
-        left: 20%; 
-        top: 60%; 
-        transform: rotate(-45deg);
-    }
-    45% { 
-        left: 40%; 
-        top: 40%; 
-        transform: rotate(225deg);
-    }
-    48% { 
-        left: 60%; 
-        top: 30%; 
-        transform: rotate(0deg);
-    }
-    51% { 
-        left: 80%; 
-        top: 15%; 
-        transform: rotate(-60deg);
-    }
-    54% { 
-        left: 90%; 
-        top: 35%; 
-        transform: rotate(120deg);
-    }
-    57% { 
-        left: 70%; 
-        top: 55%; 
-        transform: rotate(180deg);
-    }
-    60% { 
-        left: 45%; 
-        top: 70%; 
-        transform: rotate(-135deg);
-    }
-    63% { 
-        left: 25%; 
-        top: 85%; 
-        transform: rotate(-90deg);
-    }
-    66% { 
-        left: 5%; 
-        top: 70%; 
-        transform: rotate(-45deg);
-    }
-    69% { 
-        left: -5%; /* Off screen left */
-        top: 50%; 
-        transform: rotate(0deg);
-    }
-    72% { 
-        left: 105%; /* Wrapped to right side */
-        top: 40%; 
-        transform: rotate(180deg);
-    }
-    75% { 
-        left: 85%; 
-        top: 25%; 
-        transform: rotate(225deg);
-    }
-    78% { 
-        left: 65%; 
-        top: 10%; 
-        transform: rotate(270deg);
-    }
-    81% { 
-        left: 40%; 
-        top: 5%; 
-        transform: rotate(315deg);
-    }
-    84% { 
-        left: 20%; 
-        top: 20%; 
-        transform: rotate(45deg);
-    }
-    87% { 
-        left: 35%; 
-        top: 40%; 
-        transform: rotate(90deg);
-    }
-    90% { 
-        left: 55%; 
-        top: 60%; 
-        transform: rotate(135deg);
-    }
-    93% { 
-        left: 75%; 
-        top: 80%; 
-        transform: rotate(180deg);
-    }
-    96% { 
-        left: 95%; 
-        top: 65%; 
-        transform: rotate(225deg);
-    }
-    100% { 
-        left: 110%; /* Exit right */
-        top: 45%; 
-        transform: rotate(0deg);
-    }
+    0% { left: 10%; top: 15%; transform: rotate(67deg); }
+    1% { left: 16%; top: 22%; transform: rotate(67deg); }
+    2% { left: 22%; top: 18%; transform: rotate(-45deg); }
+    3% { left: 28%; top: 12%; transform: rotate(-45deg); }
+    4% { left: 34%; top: 28%; transform: rotate(123deg); }
+    5% { left: 40%; top: 35%; transform: rotate(123deg); }
+    6% { left: 34%; top: 42%; transform: rotate(-135deg); }
+    7% { left: 28%; top: 48%; transform: rotate(-135deg); }
+    8% { left: 35%; top: 55%; transform: rotate(89deg); }
+    9% { left: 42%; top: 62%; transform: rotate(89deg); }
+    10% { left: 48%; top: 55%; transform: rotate(-23deg); }
+    11% { left: 55%; top: 48%; transform: rotate(-23deg); }
+    12% { left: 62%; top: 41%; transform: rotate(156deg); }
+    13% { left: 68%; top: 47%; transform: rotate(156deg); }
+    14% { left: 75%; top: 35%; transform: rotate(-78deg); }
+    15% { left: 82%; top: 28%; transform: rotate(-78deg); }
+    16% { left: 88%; top: 22%; transform: rotate(234deg); }
+    17% { left: 94%; top: 16%; transform: rotate(234deg); }
+    18% { left: 90%; top: 10%; transform: rotate(-167deg); }
+    19% { left: 84%; top: 7%; transform: rotate(-167deg); }
+    20% { left: 78%; top: 13%; transform: rotate(45deg); }
+    21% { left: 72%; top: 19%; transform: rotate(45deg); }
+    22% { left: 78%; top: 26%; transform: rotate(90deg); }
+    23% { left: 84%; top: 32%; transform: rotate(90deg); }
+    24% { left: 90%; top: 39%; transform: rotate(135deg); }
+    25% { left: 93%; top: 45%; transform: rotate(135deg); }
+    26% { left: 87%; top: 52%; transform: rotate(-90deg); }
+    27% { left: 81%; top: 46%; transform: rotate(-90deg); }
+    28% { left: 75%; top: 53%; transform: rotate(0deg); }
+    29% { left: 69%; top: 60%; transform: rotate(0deg); }
+    30% { left: 63%; top: 67%; transform: rotate(180deg); }
+    31% { left: 57%; top: 74%; transform: rotate(180deg); }
+    32% { left: 51%; top: 68%; transform: rotate(-45deg); }
+    33% { left: 45%; top: 75%; transform: rotate(-45deg); }
+    34% { left: 39%; top: 82%; transform: rotate(-135deg); }
+    35% { left: 33%; top: 89%; transform: rotate(-135deg); }
+    36% { left: 27%; top: 83%; transform: rotate(234deg); }
+    37% { left: 21%; top: 76%; transform: rotate(234deg); }
+    38% { left: 15%; top: 70%; transform: rotate(45deg); }
+    39% { left: 12%; top: 77%; transform: rotate(45deg); }
+    40% { left: 8%; top: 84%; transform: rotate(90deg); }
+    41% { left: 14%; top: 91%; transform: rotate(90deg); }
+    42% { left: 20%; top: 94%; transform: rotate(0deg); }
+    43% { left: 26%; top: 88%; transform: rotate(0deg); }
+    44% { left: 32%; top: 94%; transform: rotate(67deg); }
+    45% { left: 38%; top: 91%; transform: rotate(67deg); }
+    46% { left: 44%; top: 85%; transform: rotate(-23deg); }
+    47% { left: 50%; top: 78%; transform: rotate(-23deg); }
+    48% { left: 56%; top: 72%; transform: rotate(156deg); }
+    49% { left: 62%; top: 79%; transform: rotate(156deg); }
+    50% { left: 68%; top: 86%; transform: rotate(123deg); }
+    51% { left: 74%; top: 93%; transform: rotate(123deg); }
+    52% { left: 80%; top: 87%; transform: rotate(-67deg); }
+    53% { left: 86%; top: 80%; transform: rotate(-67deg); }
+    54% { left: 92%; top: 74%; transform: rotate(-134deg); }
+    55% { left: 88%; top: 68%; transform: rotate(-134deg); }
+    56% { left: 94%; top: 62%; transform: rotate(178deg); }
+    57% { left: 91%; top: 56%; transform: rotate(178deg); }
+    58% { left: 85%; top: 63%; transform: rotate(-89deg); }
+    59% { left: 79%; top: 57%; transform: rotate(-89deg); }
+    60% { left: 73%; top: 64%; transform: rotate(34deg); }
+    61% { left: 67%; top: 71%; transform: rotate(34deg); }
+    62% { left: 61%; top: 78%; transform: rotate(145deg); }
+    63% { left: 55%; top: 85%; transform: rotate(145deg); }
+    64% { left: 49%; top: 91%; transform: rotate(-12deg); }
+    65% { left: 43%; top: 85%; transform: rotate(-12deg); }
+    66% { left: 37%; top: 78%; transform: rotate(-156deg); }
+    67% { left: 31%; top: 72%; transform: rotate(-156deg); }
+    68% { left: 25%; top: 66%; transform: rotate(78deg); }
+    69% { left: 19%; top: 59%; transform: rotate(78deg); }
+    70% { left: 13%; top: 53%; transform: rotate(123deg); }
+    71% { left: 7%; top: 60%; transform: rotate(123deg); }
+    72% { left: 10%; top: 67%; transform: rotate(56deg); }
+    73% { left: 16%; top: 73%; transform: rotate(56deg); }
+    74% { left: 22%; top: 66%; transform: rotate(-34deg); }
+    75% { left: 28%; top: 59%; transform: rotate(-34deg); }
+    76% { left: 34%; top: 53%; transform: rotate(167deg); }
+    77% { left: 40%; top: 47%; transform: rotate(167deg); }
+    78% { left: 46%; top: 41%; transform: rotate(-89deg); }
+    79% { left: 52%; top: 35%; transform: rotate(-89deg); }
+    80% { left: 58%; top: 29%; transform: rotate(234deg); }
+    81% { left: 64%; top: 23%; transform: rotate(234deg); }
+    82% { left: 70%; top: 17%; transform: rotate(12deg); }
+    83% { left: 76%; top: 11%; transform: rotate(12deg); }
+    84% { left: 82%; top: 5%; transform: rotate(89deg); }
+    85% { left: 88%; top: 8%; transform: rotate(89deg); }
+    86% { left: 94%; top: 14%; transform: rotate(134deg); }
+    87% { left: 90%; top: 20%; transform: rotate(134deg); }
+    88% { left: 84%; top: 26%; transform: rotate(-23deg); }
+    89% { left: 78%; top: 32%; transform: rotate(-23deg); }
+    90% { left: 72%; top: 25%; transform: rotate(-156deg); }
+    91% { left: 66%; top: 19%; transform: rotate(-156deg); }
+    92% { left: 60%; top: 13%; transform: rotate(67deg); }
+    93% { left: 54%; top: 7%; transform: rotate(67deg); }
+    94% { left: 48%; top: 14%; transform: rotate(145deg); }
+    95% { left: 42%; top: 20%; transform: rotate(145deg); }
+    96% { left: 36%; top: 27%; transform: rotate(-67deg); }
+    97% { left: 30%; top: 21%; transform: rotate(-67deg); }
+    98% { left: 24%; top: 15%; transform: rotate(-178deg); }
+    99% { left: 18%; top: 9%; transform: rotate(-178deg); }
+    100% { left: 12%; top: 16%; transform: rotate(89deg); }
 }
