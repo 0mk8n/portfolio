@@ -6,14 +6,15 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<div class="css-bug"></div>
 <body>
+    <div class="css-bug"></div>
     <!-- Navigation -->
   <div class="content" >
     <nav>
         <button class="nav-btn active" onclick="showSection('home')">thuis</button>
         <button class="nav-btn" onclick="showSection('about')">over mij</button>
         <button class="nav-btn" onclick="showSection('projects')">projecten</button>
+        <button class="nav-btn" onclick="showSection('agenda')">agenda</button>
         <button class="nav-btn" onclick="showSection('contact')">contact</button>
     </nav>
 
@@ -22,10 +23,10 @@
         <!-- Home Section -->
 <section id="home" class="section active">
     <div class="home-container">
-         <div class="project-item small" onclick="showProject(4)">
-                <div class="project-placeholder"><img src="fotos/panty/IMG-20241004-WA0012.jpg"></div>
+         <div class="project-item small" onclick="showProject(11)">
+                <div class="project-placeholder"><img src="fotos/nacht/DSCF5195.JPG"></div>
             </div>
-        <div class="project-item large" onclick="showProject(1)">
+        <div class="project-item featured" onclick="showProject(1)">
             <div class="project-placeholder"><img src="export202508041801038390.png"></div>
         </div>
         <div class="small-projects-row">
@@ -42,6 +43,7 @@
         <!-- About Section -->
         <section id="about" class="section">
             <div class="about-container">
+               <div class="project-title">Rosa Lenore van den Goor</div>
                 <div class="about-image"> <img src="IMG-20241213-WA0043.jpg"></div>
                 <div class="about-text">
                     Ik ben een multidisciplinair kunstenaar werkzaam ergens tussen Nijmegen en mijn verbeelding. Door middel van poppen, tekeningen, kostuums, 
@@ -56,6 +58,10 @@
         <!-- Projects Section -->
         <section id="projects" class="section">
             <div class="projects-container">
+                <div class="project-entry" onclick="showProject(11)">
+                    <div class="project-image"> <img src="fotos/nacht/DSCF5094.JPG"></div>
+                    <div class="project-description">text</div>
+                </div>
                 <div class="project-entry" onclick="showProject(1)">
                     <div class="project-image"> <img src="export202508041801038390.png"></div>
                     <div class="project-description">De Kop en de Staart - een korte film</div>
@@ -95,6 +101,36 @@
                 <div class="project-entry" onclick="showProject(10)">
                     <div class="project-image"><img src="fotos/aardbei/aardbei4.jpg"></div>
                     <div class="project-description">Beschimmelde aardbei - een fotoshop experiment</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Agenda Section -->
+        <section id="agenda" class="section">
+            <div class="agenda-container">
+                <div class="agenda-item">
+                    <div class="agenda-title">text</div>
+                    <div class="agenda-image"></div>
+                </div>
+                <div class="agenda-item">
+                    <div class="agenda-title">text</div>
+                    <div class="agenda-image"></div>
+                </div>
+                <div class="agenda-item">
+                    <div class="agenda-title">text</div>
+                    <div class="agenda-image"></div>
+                </div>
+                <div class="agenda-item">
+                    <div class="agenda-title">text</div>
+                    <div class="agenda-image"></div>
+                </div>
+                <div class="agenda-item">
+                    <div class="agenda-title">text</div>
+                    <div class="agenda-image"></div>
+                </div>
+                <div class="agenda-item">
+                    <div class="agenda-title">text</div>
+                    <div class="agenda-image"></div>
                 </div>
             </div>
         </section>
@@ -161,7 +197,6 @@
         <div class="project-detail-image"><img src="fotos/wol/IMG20240617143334.jpg"></div>
         <div class="project-detail-image"><img src="fotos/wol/rosaposter1.png"></div>
         <div class="project-detail-image"><img src="fotos/wol/rosaposter.png"></div>
-        <div class="project-text">
     </div>
 </section>
 
@@ -334,6 +369,48 @@
         </div>
         <button class="arrow right" onclick="nextPage()">&#8250;</button>
     </div>
+    </div>
+</section>
+
+<section id="project-11" class="section project-detail-section">
+    <div class="project-detail">
+        <button class="back-btn" onclick="goBack()">← Terug</button>
+        <div class="project-title">Als de Nacht Begint te Leven</div>
+        <div class="project-text">
+            De nacht. <br>
+Een huis dat ‘s nachts groter lijkt door de stilte. <br>
+Een bos dat ‘s nachts eindeloos lijkt door de duisternis.<br> 
+Introspectie door naar buiten te kijken. <br>
+Stilte. <br>
+Een ruimte die de oordelen van het zonlicht niet kent. <br>
+De nacht is niet veilig, maar doet ook niet alsof. <br>
+De nacht is een vrije ruimte, een eerlijke ruimte. <br>
+Een ruimte waarin de fantasie eindeloos gastvrij is. <br>
+Wie of wat leeft er eigenlijk in die eindeloze nacht?
+        </div>
+        <div class="project-detail-image"><img src="fotos/nacht/DSCF5094.JPG"></div>
+        <div class="project-detail-image"><img src="fotos/nacht/DSCF5110.JPG"></div>
+        <div class="project-detail-image"><img src="fotos/nacht/DSCF5138.JPG"></div>
+        <div class="project-detail-image"><img src="fotos/nacht/DSCF5153.JPG"></div>
+        Ik heb een serie poppenkostuums gemaakt die de verhouding tussen pop en poppenspeler doen vervagen. Net zoals de duisternis van de nacht je blik doet vervagen en je bijvoorbeeld gezichten gaat zien in levenloze objecten.
+<div class="project-text">Mijn project gaat niet louter om het beeld, maar om het gevoel dat het beeld oproept. Een gevoel dat omschreven kan worden als nostalgie, duisternis of kinderlijkheid, maar dat ook doet beseffen dat geen woorden het exacte gevoel kunnen vatten. Ik wil je laten beseffen dat je fantasie deel is van jouw ervaring en dus deel van jouw realiteit. Ik benadruk hiermee dat beeld haar eigen taal is en dat je het niet altijd moet willen vertalen naar iets behapbaars. Laat de nacht in al haar vaagheid bestaan, ervaar het en weet dat het écht is. </div>
+
+        <div class="project-detail-image"><img src="fotos/nacht/DSCF5158-1.png"></div>
+        <div class="project-detail-image"><img src="fotos/nacht/DSCF5184.JPG"></div>
+        <div class="project-detail-image"><img src="fotos/nacht/DSCF5194.JPG"></div>
+        <div class="project-detail-image"><img src="fotos/nacht/DSCF5195.JPG"></div>
+        <div class="project-detail-image"><img src="fotos/nacht/DSCF5216.JPG"></div>
+        <div class="project-detail-image"><img src="fotos/nacht/DSCF5230.JPG"></div>
+        <div class="project-detail-image"><img src="fotos/nacht/DSCF5279.JPG"></div>
+        <div class="project-text">Met het gebruik van afgedankte stoffen, schapenwol en andere restmaterialen heb ik mijn werk gemaakt. Ik vind het belangrijk zoveel mogelijk oud en restmateriaal te gebruiken om te laten zien dat je van ‘afval’ prachtige dingen kan maken, zonder extra belastend op het milieu te zijn. Het is een oproep om met z’n allen de mooie materialen te gebruiken die een vorig leven met zich meedragen. Zo kunnen we aan onze omgeving laten weten dat we haar liefhebben en zorg voor haar dragen. </div>
+        <div class="project-detail-image"><img src="fotos/nacht/DSCF5397.JPG"></div>
+        <div class="project-detail-image"><img src="fotos/nacht/DSCF5410.JPG"></div>
+        <div class="project-detail-image"><img src="fotos/nacht/DSCF5427.JPG"></div>
+        <div class="project-detail-image"><img src="fotos/nacht/DSCF5456.JPG"></div>
+        <div class="project-detail-image"><img src="fotos/nacht/DSCF5495.JPG"></div>
+        <div class="project-detail-image"><img src="fotos/nacht/DSCF5511.JPG"></div>
+        <div class="project-detail-image"><img src="fotos/nacht/DSCF5537.JPG"></div>
+        <div class="project-detail-image"><img src="fotos/nacht/DSCF5555.JPG"></div>
     </div>
 </section>
 </section>

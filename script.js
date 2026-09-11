@@ -346,6 +346,9 @@ document.addEventListener('keydown', function(e) {
             showSection('projects');
             break;
         case '4':
+            showSection('agenda');
+            break;
+        case '5':
             showSection('contact');
             break;
         case 'Escape':
@@ -438,22 +441,22 @@ function showPageTwo(index) {
 // Function to navigate to the previous page
 function prevPageTwo() {
     const pages = document.querySelectorAll('.page2'); // Select all pages
-    if (currentPage > 0) {
-        currentPage--; // Move to the previous page
-        showPageTwo(currentPage); // Update the displayed page
+    if (currentPage2 > 0) {
+        currentPage2--; // Move to the previous page
+        showPageTwo(currentPage2); // Update the displayed page
     }
 }
 
 // Function to navigate to the next page
 function nextPageTwo() {
     const pages = document.querySelectorAll('.page2'); // Select all pages
-    if (currentPage < pages.length - 1) {
-        currentPage++; // Move to the next page
-        showPageTwo(currentPage); // Update the displayed page
+    if (currentPage2 < pages.length - 1) {
+        currentPage2++; // Move to the next page
+        showPageTwo(currentPage2); // Update the displayed page
     }
 }
 
 
 
 // Initialize by showing the first page
-showPageTwo(currentPage);
+showPageTwo(currentPage2);
